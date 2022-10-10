@@ -1,0 +1,31 @@
+package com.isquibly.config;
+
+import com.isquibly.*;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Import;
+
+@Configuration
+@Import(GimeConfig.class)
+@ComponentScan(basePackages = "com.isquibly")
+public class AppConfig {
+
+    //////////////////////
+    // Bean definitions //
+    //////////////////////
+//    @Bean
+//    public NumberGenerator numberGenerator() {
+//        return new NumberGeneratorImpl();
+//    }
+//
+//    @Bean
+//    public Gime gime() {
+//        return new GimeImpl();
+//    }
+//
+//    @Bean
+//    public MessageGenerator messageGenerator() {
+//        return new MessageGeneratorImpl();
+//    }
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="numberGenBean" class="com.isquibly.NumberGeneratorImpl" />
+
+    <bean id="gimeBean" class="com.isquibly.GimeImpl" >
+        <!--
+         Pass a previously declared bean to another bean
+         using <constructor-arg ref="someBean" />
+         -->
+        <!-- <constructor-arg ref="numberGenBean" />  -->
+
+        <!--
+         Pass a previously declared bean to another bean
+         by setting a property
+         using <property ref="someBean" name="someProp" />
+         -->
+        <property ref="numberGenBean" name="numberGenerator" />
+    </bean>
+
+</beans>
