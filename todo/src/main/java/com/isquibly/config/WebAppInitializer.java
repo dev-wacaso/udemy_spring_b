@@ -17,7 +17,9 @@ public class WebAppInitializer implements WebApplicationInitializer {
     public void onStartup(ServletContext servletContext) throws ServletException {
         log.info("onStartup called....");
 
-        // Create the Spring application context/container
+        // Create the web application context/Spring container
+
+        // Create the Spring application context
         log.trace("creating/registering AnnotationConfigWebApplicationContext....");
         AnnotationConfigWebApplicationContext ctx = new AnnotationConfigWebApplicationContext();
         ctx.register(WebConfig.class);
