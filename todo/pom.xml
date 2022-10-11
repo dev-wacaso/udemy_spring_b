@@ -94,7 +94,7 @@
                     </container>
                     <configuration>
                         <properties>
-                            <cargo.servlet.port>6969</cargo.servlet.port>
+                            <cargo.servlet.port>68</cargo.servlet.port>
                         </properties>
                     </configuration>
                 </configuration>
