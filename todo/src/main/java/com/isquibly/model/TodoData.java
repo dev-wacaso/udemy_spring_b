@@ -1,6 +1,7 @@
 package com.isquibly.model;
 
 import lombok.NonNull;
+import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -8,7 +9,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.ListIterator;
 
-
+@Component
 public class TodoData {
     private static int idValue = 1;
     private final List<Todo> items = new ArrayList<>();
