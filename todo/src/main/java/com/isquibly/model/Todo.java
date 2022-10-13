@@ -14,4 +14,8 @@ public class Todo {
     private String title, details;
     @NonNull
     private LocalDate deadline;
+
+    public static Todo blank() {
+        return new Todo("", "" ,LocalDate.now());
+    }
 }

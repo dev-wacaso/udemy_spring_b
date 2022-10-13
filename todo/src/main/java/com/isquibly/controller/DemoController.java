@@ -28,17 +28,17 @@ public class DemoController {
         return "ola!";
     }
 
-    @GetMapping("/")
-    public void handleDefault(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        resp.setStatus(200);
-        resp.getWriter().println("apple");
-    }
-
-    @GetMapping("/todo")
-    public void handleTodo(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        resp.setStatus(200);
-        resp.getWriter().println("blueberry");
-    }
+//    @GetMapping("/")
+//    public void handleDefault(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+//        resp.setStatus(200);
+//        resp.getWriter().println("Demo controller apple");
+//    }
+//
+//    @GetMapping("/todo")
+//    public void handleTodo(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+//        resp.setStatus(200);
+//        resp.getWriter().println("blueberry");
+//    }
 
     @GetMapping("/welcome")
     public String handleWelcome(@RequestParam String username, @RequestParam int age,  Model model) {
