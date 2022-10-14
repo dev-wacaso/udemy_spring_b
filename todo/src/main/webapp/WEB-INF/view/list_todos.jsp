@@ -21,9 +21,16 @@
                     <tr>
                         <th>Title</th>
                         <th>Deadline</th>
-                        <th></th>
+                        <th>@</th>
+                        <th>!</th>
+                        <th>X</th>
                     </tr>
                     <c:forEach var="item" items="${todoService.getTodos()}">
+                        <!-- View -->
+                        <c:url var="viewUrl" value="${RequestMappings.GET_TODO}">
+                            <c:param name="id" value="${item.id}"/>
+                        </c:url>
+
                         <!-- Edit -->
                         <c:url var="editUrl" value="${RequestMappings.ADD_EDIT_TODO}">
                             <c:param name="id" value="${item.id}"/>
@@ -35,8 +42,10 @@
                         </c:url>
                         <tr>
                             <td><c:out value="${item.title}" /></td>
-                            <td><a href="${editUrl}"><img src="/images/edit_21x21.png" /></a></td>
                             <td><c:out value="${item.deadline}" /></td>
+                            <td><a href="${viewUrl}">@</a></td>
+                            <td><a href="${editUrl}">!</a></td>
+                            <td><a href="${deleteUrl}">X</a></td>
                         </tr>
                     </c:forEach>
                 </table>
