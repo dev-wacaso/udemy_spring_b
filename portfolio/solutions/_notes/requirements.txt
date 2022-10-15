@@ -1,0 +1,51 @@
+
+- Point is to provide a solution outside of the box
+- A different perspective
+
+
+- Problem to solve
+-- Required minimum amount of text to describe problem
+
+- list of criteria solution must pass
+- Level of difficulty
+- Solutions List
+-- User acceptance (voted up/down)
+-- Top N/5 solutions stay, remaining deactivated/disabled for N/30 days, before deletion
+
+- Each solution allows comments while active
+- Solution providers earn points by number solutions * difficulty of problem * 1-N/5 position within accepted results
+
+- Comments
+
+- Author
+-- Link
+-- email
+-- facebook
+-- twitter
+-- Popularity
+-- prize
+
+
+- Meta
+Tags to allow user/solver to find similar problems
+- works in conjunction with Meta
+
+- Link
+-- Link to more information
+
+
+- Categories
+Geo
+- ie, Italy,Venice,Flood
+Science
+- ie, Science,Energy,Solar or Science,Energy,Nuclear,Waste
+Relations
+Fiction
+
+- Users can recommend category hierarchy, but categories can be re-ordered/renamed by admin to 
+
+
+
+
+
+
