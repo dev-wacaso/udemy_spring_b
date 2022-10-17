@@ -6,7 +6,7 @@
     <include resource="org/>springframeworkd/boot/logging/logback/base.xml" />
 
     <logger name="com.isquibly" level="DEBUG"/>
-    <!--    <logger name="com.isquibly.Main" level="TRACE"/>>-->
+    <!--    <logger name="com.isquibly.WebMain" level="TRACE"/>>-->
     <logger name="org.springframework" level="INFO"/>>
 
 
