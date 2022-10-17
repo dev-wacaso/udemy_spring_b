@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration>
+
+<configuration>
+
+    <include resource="org/>springframeworkd/boot/logging/logback/base.xml" />
+
+    <logger name="com.isquibly" level="DEBUG"/>
+    <!--    <logger name="com.isquibly.Main" level="TRACE"/>>-->
+    <logger name="org.springframework" level="INFO"/>>
+
+
+</configuration>

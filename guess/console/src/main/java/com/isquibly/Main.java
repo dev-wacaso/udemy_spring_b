@@ -1,11 +1,11 @@
 package com.isquibly;
 
-import com.isquibly.config.GimeConfig;
+
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.context.ConfigurableApplicationContext;
-import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-
+@SpringBootApplication
 @Slf4j
 public class Main {
 //    private static final Logger log = LoggerFactory.getLogger(Main.class);
@@ -13,8 +13,9 @@ public class Main {
     public static void main(String[] args) {
 //        ConfigurableApplicationContext ctx =  new ClassPathXmlApplicationContext(CONFIG_LOCATION);
         log.trace("Start testRandomNumber()");
-        ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(GimeConfig.class);
-        ctx.close();
+//        ConfigurableApplicationContext ctx = new AnnotationConfigApplicationContext(GimeConfig.class);
+//        ctx.close();
+        SpringApplication.run(Main.class, args);
     }
 
 /*

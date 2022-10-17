@@ -11,5 +11,8 @@
 <!--    <logger name="com.isquibly.Main" level="TRACE"/>>-->
 <!--    <logger name="org.springframework" level="trace"/>>-->
 
+    <root level="INFO" />
+    <logger name="org.apache.tomcat.util.net." level="ERROR" />
+
 
 </configuration>
