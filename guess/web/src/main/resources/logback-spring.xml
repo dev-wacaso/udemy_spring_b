@@ -2,11 +2,7 @@
 <!DOCTYPE configuration>
 
 <configuration>
-
-    <include resource="org/>springframeworkd/boot/logging/logback/base.xml" />
-
+    <include resource="org/springframework/boot/logging/logback/base.xml" />
     <logger name="com.isquibly" level="DEBUG"/>
-    <!--    <logger name="com.isquibly.WebMain" level="TRACE"/>>-->
-    <logger name="org.springframework" level="TRACE"/>>
-
+    <logger name="org.springframework" level="INFO"/>
 </configuration>
