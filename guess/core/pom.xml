@@ -11,40 +11,21 @@
     <artifactId>core</artifactId>
 
     <dependencies>
-        <!-- Spring context -->
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-        <!-- Logging -->
-        <dependency>
-            <groupId>ch.qos.logback</groupId>
-            <artifactId>logback-classic</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>javax.annotation</groupId>
-            <artifactId>javax.annotation-api</artifactId>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
         </dependency>
-
-<!--
-        Load a local lib/jar instead of letting Maven load it
-        Look at <scope/> and <systemPath/> tags
-
+        <!--
+        https://mvnrepository.com/artifact/org.projectlombok/lombok
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
-            <scope>system</scope>
-            <systemPath>${basedir}/relative/path/to/lib/foo.jar}</systemPath>
         </dependency>
--->
-
+        -->
     </dependencies>
 </project>
