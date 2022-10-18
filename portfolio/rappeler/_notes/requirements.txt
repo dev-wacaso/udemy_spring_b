@@ -1,0 +1,23 @@
+Memory
+-------
+- Title
+- Details
+- saveDt
+- modDt
+- reminderDt
+- private/public
+- meta
+
+
+- Based on the meta associated with this Mem, another list (Related) of Mems are partially displayed
+-- As you search (select/deselect) meta, the Related list auto filters to show only relevant Mems
+
+- Meta tags "ARE" the categories for Mems
+
+- By default mems are private
+
+
+Settings
+--------
+- Memories private by default
+- Reminder in ___ hours/days/weeks/months/years

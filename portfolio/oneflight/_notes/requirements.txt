@@ -1,0 +1,84 @@
+#########
+## OFI ##
+#########
+
+Trip Quote
+----------
+- One Way
+- Round Trip
+- Multi-City
+-- From
+-- To
+-- Departure
+-- Return
+-- Passengers
+--> Select Aircraft
+
+
+Aircraft
+--------
+- Long Range Jets
+- Super Light Jets
+- Large Jets
+- Super Midsize Jets
+- Super Large Jets
+- Midsize Jets
+-- Icon
+-- Icon overlay indicating seat capacity and range
+-- Link to flight aware for photo gallery
+
+
+Jetclub
+-------
+
+
+Catering
+--------
+
+
+
+Chauffeur
+---------
+- Town Car
+- Limousine
+- SUV
+-- From
+-- TO
+-- Pickup time
+-- Return time
+-- Hold at Location
+-- Passengers
+--> Reserve Chauffeur Services
+
+
+
+Concierge
+---------
+- Airport
+-- Valet Parking
+-- VIP Lounge
+-- Nanny Services
+-- Luggage Transportation
+-- Massage
+-- Other
+- In-Flight
+- Destination
+--> Reserve Concierge Services
+
+
+Call Us
+-------
+
+
+Notifications
+-------------
+
+
+Login
+-----
+- Join JETClub
+-- Membership perks/details
+-- Membership application
+
+- Login
+-- Login assistance
