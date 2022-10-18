@@ -1,6 +1,6 @@
 package com.isquibly.config;
 
-import com.isquibly.util.ViewNames;
+import com.isquibly.util.WebViewNames;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
@@ -9,6 +9,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/").setViewName(ViewNames.HOME);
+        registry.addViewController("/").setViewName(WebViewNames.HOME);
+        registry.addViewController("home").setViewName(WebViewNames.HOME);
+        registry.addViewController("/cart").setViewName(WebViewNames.CART);
     }
 }
