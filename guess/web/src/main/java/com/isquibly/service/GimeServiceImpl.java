@@ -6,8 +6,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import javax.annotation.PostConstruct;
-
 @Service
 @Slf4j
 public class GimeServiceImpl implements GimeService {
@@ -20,10 +18,10 @@ public class GimeServiceImpl implements GimeService {
         this.msgGen = msgGen;
     }
 
-    @PostConstruct
-    void init() {
-        log.info("In the GimeServiceImpl...\n\tmain message: " + msgGen.getMainMessage() + "\n\tnumber to guess: " + gime.getMagicNumber());
-    }
+//    @PostConstruct
+//    void init() {
+//        log.info("In the GimeServiceImpl...\n\tmain message: " + msgGen.getMainMessage() + "\n\tnumber to guess: " + gime.getMagicNumber());
+//    }
 
     @Override
     public boolean isGimeOver() {
