@@ -10,11 +10,18 @@
 <body>
     <div align="center">
         <h1>Guess the Number Game</h1>
-<!--        <h3 th:text="${mainMessage}">You shouldn't see this...check mainMessage</h3>-->
-        <h3 th:text="${__${T(com.isquibly.util.AttributeNames).MAIN_MESSAGE}__}">You shouldn't see this...check mainMessage</h3>
+        <h3 th:text="${mainMessage}">You shouldn't see this...check mainMessage</h3>
+<!--
+        <h3 th:text="${__${T(com.isquibly.util.AttributeNames).MAIN_MESSAGE}__}">
+            You shouldn't see this...check mainMessage
+        </h3>
+-->
         <h3 th:text="${resultMessage}">You shouldn't see this...check resultMessage</h3>
+        <!--
         https://www.google.com/search?q=instantiation+of+new+objects+and+access+to+static+classes+or+parameters+is+forbidden+in+this+context&rlz=1C1ONGR_enUS991US991&oq=instantiation+of+new+objects+and+access+to+static+classes+or+parameters+is+forbidden+in+this+context&aqs=chrome..69i57.3343j0j1&sourceid=chrome&ie=UTF-8
-        <form action="play" method="post">
+        <form action="play2" method="post">
+        -->
+        <form th:action="${formActionPlay}" method="post">
             <label for="guess">What do you think?</label>
             <input id="guess" name="guess" type="number" />
             <input type="submit" value="Submit"/>

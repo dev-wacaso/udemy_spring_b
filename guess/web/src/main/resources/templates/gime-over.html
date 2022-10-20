@@ -8,10 +8,16 @@
     <title>Game Over Dude!!!</title>
 </head>
 <body>
-    <h2>Game over dude!!!!</h2>
-    <h3>Well played...</h3>
+<div align="center">
+    <h1>Guess The Number Gime</h1>
+    <h2>Gime Over</h2>
+    <h3 th:text="${resultMessage}"></h3>
+    <h3><a th:href="${formActionPlay}">Play Again</a></h3>
+    <h3><a th:href="${formActionHome}">Home</a></h3>
+
     <footer>
         <p>Created by iSquibly, LLC</p>
     </footer>
+    </div>
 </body>
 </html>

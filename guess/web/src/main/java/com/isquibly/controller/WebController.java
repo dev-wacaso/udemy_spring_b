@@ -24,15 +24,27 @@ public class WebController {
     }
 
     @ModelAttribute(AttributeNames.MAIN_MESSAGE)
-    public String handleMainMessage() {
+    public String mainMessage() {
 //        return "service.getMainMessage()";
         return service.getMainMessage();
     }
 
     @ModelAttribute(AttributeNames.RESULT_MESSAGE)
-    public String handleResultMessage() {
+    public String resultMessage() {
 //        return "service.getResultMessage()";
         return service.getResultMessage();
+    }
+
+    @ModelAttribute(AttributeNames.FORM_ACTION_HOME)
+    public String formActionHome() {
+        log.info("formActionHome");
+        return PathMappings.HOME;
+    }
+
+    @ModelAttribute(AttributeNames.FORM_ACTION_PLAY)
+    public String formActionPlay() {
+        log.info("formActionPlay");
+        return PathMappings.PLAY;
     }
 
 
@@ -49,8 +61,8 @@ public class WebController {
 //    }
 
     @GetMapping(PathMappings.PLAY)
-    public String handlePlay(Model model) {
-        log.info("handlePlay() called...");
+    public String doGetPlay(Model model) {
+        log.info("doGetPlay() called...");
 //        model.addAttribute("playUrl", "cheeseburger");
 //        model.addAttribute(AttributeNames.MAIN_MESSAGE, service.getMainMessage());
 //        model.addAttribute(AttributeNames.RESULT_MESSAGE, service.getResultMessage());
@@ -58,7 +70,8 @@ public class WebController {
     }
 
     @PostMapping(PathMappings.PLAY)
-    public String handleGuess(@RequestParam int guess) {
+    public String doPostPlay(@RequestParam int guess) {
+        log.info("doPostPlay() called...");
         service.checkGuess(guess);
         return PathMappings.REDIRECT_PLAY;
     }
