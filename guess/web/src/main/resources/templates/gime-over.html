@@ -2,9 +2,6 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Game Over Dude!!!</title>
 </head>
 <body>
@@ -12,11 +9,11 @@
     <h1>Guess The Number Gime</h1>
     <h2>Gime Over</h2>
     <h3 th:text="${resultMessage}"></h3>
-    <h3><a th:href="${formActionPlay}">Play Again</a></h3>
-    <h3><a th:href="${formActionHome}">Home</a></h3>
+    <h3><a th:href="${pathMappingsStartOver}">Play Again</a></h3>
+    <h3><a th:href="${pathMappingsHome}">Home</a></h3>
 
-    <footer>
-        <p>Created by iSquibly, LLC</p>
+    <footer th:replace="~{fragments/footer :: footerFragment}">
+        <p>Created by <b>Acme, LLC</b></p>
     </footer>
     </div>
 </body>

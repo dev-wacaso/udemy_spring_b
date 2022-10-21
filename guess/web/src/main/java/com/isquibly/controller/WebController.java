@@ -35,16 +35,22 @@ public class WebController {
         return service.getResultMessage();
     }
 
-    @ModelAttribute(AttributeNames.FORM_ACTION_HOME)
-    public String formActionHome() {
-        log.info("formActionHome");
+    @ModelAttribute(AttributeNames.PATH_MAPPINGS_HOME)
+    public String pathMappingsHome() {
+        log.info("pathMappingsHome");
         return PathMappings.HOME;
     }
 
-    @ModelAttribute(AttributeNames.FORM_ACTION_PLAY)
-    public String formActionPlay() {
-        log.info("formActionPlay");
+    @ModelAttribute(AttributeNames.PATH_MAPPINGS_PLAY)
+    public String pathMappingsPlay() {
+        log.info("pathMappingsPlay");
         return PathMappings.PLAY;
+    }
+
+    @ModelAttribute(AttributeNames.PATH_MAPPINGS_START_OVER)
+    public String pathMappingsStartOver() {
+        log.info("pathMappingsStartOver");
+        return PathMappings.START_OVER;
     }
 
 
@@ -60,12 +66,18 @@ public class WebController {
 //        model.addAttribute("playUrl", "applesauce");
 //    }
 
+    @GetMapping(PathMappings.START_OVER)
+    public String startOver(Model model) {
+        log.info("startOver() called...");
+        service.reset();
+
+        return PathMappings.REDIRECT_PLAY;
+    }
+
     @GetMapping(PathMappings.PLAY)
     public String doGetPlay(Model model) {
         log.info("doGetPlay() called...");
-//        model.addAttribute("playUrl", "cheeseburger");
-//        model.addAttribute(AttributeNames.MAIN_MESSAGE, service.getMainMessage());
-//        model.addAttribute(AttributeNames.RESULT_MESSAGE, service.getResultMessage());
+
         return service.isGimeOver() ? WebViewNames.GIME_OVER : WebViewNames.PLAY;
     }
 
